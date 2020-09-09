@@ -1,4 +1,4 @@
-#运行步骤
+# 运行步骤
 整个项目down下来，顺序 matlab 、 python 、matlab
 
 1.环境：win10 + matlab r2016a
@@ -13,8 +13,8 @@ https://github.com/jasscical/dense-depth-body-parts-to-pointcloud/blob/master/ex
 
 运行 /ubc3vtoolkit/demos/demo_render2_point_cloud.m 生成人体点云、骨架点云
 
-##注意：所有的步骤都是大概步骤，你可能需要每一步修改一下数据源，目录最好是就按我这样的结构，图片名称是一定不能改的！因为groundtruth.mat是根据名称来对应的外部相机参数！
-##大致流程：先将源数据512*424图像分割得到250*250，再将这个分割结果还原成512*424，然后替换groundtruth下的图片。最后生成对应的人体点云以及骨架点云
+## 注意：所有的步骤都是大概步骤，你可能需要每一步修改一下数据源，目录最好是就按我这样的结构，图片名称是一定不能改的！因为groundtruth.mat是根据名称来对应的外部相机参数！
+## 大致流程：先将源数据512*424图像分割得到250*250，再将这个分割结果还原成512*424，然后替换groundtruth下的图片。最后生成对应的人体点云以及骨架点云
 
 
 
