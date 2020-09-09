@@ -1,3 +1,36 @@
+#####运行步骤
+整个项目down下来，顺序 matlab 、 python 、matlab
+
+1.环境：win10 + matlab r2016a
+运行 split_img.m 得到图像分割（预处理1）的结果，在./100_data/pre_250_250/下，是一些250 * 250 的png图片
+
+2.环境 win10 + python3.x
+运行 tmp.py 得到图像还原（预处理2）的结果，在./dense-depth-body-parts-to-pointcloud/body-class/res_all/下,是一些512 * 424的图片
+
+3.环境：win10 + matlab r2016a
+先将 2 中 res_all中的结果512 * 424图片，举个例子，比如放到hard-pose/test/10/images/groundtruth/Cam1下替换原来的groundtruth图片
+https://github.com/jasscical/dense-depth-body-parts-to-pointcloud/blob/master/explain_img/1.png
+
+运行 /ubc3vtoolkit/demos/demo_render2_point_cloud.m 生成人体点云、骨架点云
+
+##注意：所有的步骤都是大概步骤，你可能需要每一步修改一下数据源，目录最好是就按我这样的结构，图片名称是一定不能改的！因为groundtruth.mat是根据名称来对应的外部相机参数！
+##大致流程：先将源数据512*424图像分割得到250*250，再将这个分割结果还原成512*424，然后替换groundtruth下的图片。最后生成对应的人体点云以及骨架点云
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Real-Time Human Motion Capture with Multiple Depth Cameras
 This is the pre-trained model of the deep convolutional network that was used in our paper:
 * A. Shafaei, J. J. Little. Real-Time Human Motion Capture with Multiple Depth Cameras. In 13th Conference on Computer and Robot Vision, Victoria, Canada, 2016.
@@ -48,3 +81,5 @@ Caffe models used for the python code are put in the caffe_models directory
 ### Performance
 Confusion Matrix of the network trained on Hard-Pose.
 ![alt text](https://github.com/ashafaei/dense-depth-body-parts/raw/master/ubc3v_confmat.png "Confusion Matrix")
+
+
