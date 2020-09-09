@@ -9,8 +9,8 @@
 
 3.环境：win10 + matlab r2016a
 先将 2 中 res_all中的结果512 * 424图片，举个例子，比如放到hard-pose/test/10/images/groundtruth/Cam1下替换原来的groundtruth图片
-https://github.com/jasscical/dense-depth-body-parts-to-pointcloud/blob/master/explain_img/1.png
-
+![alt text](https://github.com/jasscical/dense-depth-body-parts-to-pointcloud/blob/master/explain_img/1.png
+)
 运行 /ubc3vtoolkit/demos/demo_render2_point_cloud.m 生成人体点云、骨架点云
 
 ## 注意：所有的步骤都是大概步骤，你可能需要每一步修改一下数据源，目录最好是就按我这样的结构，图片名称是一定不能改的！因为groundtruth.mat是根据名称来对应的外部相机参数！
