@@ -1,0 +1,12 @@
+﻿input为原始512*424深度图片
+pre_250_250为图像分割后的深度图片(matlab的body-dense预处理后的图片)
+res_all为pre_250_250还原为512*424的深度图片，也就是本程序最终结果
+
+input is the original 512*424 depth image
+pre_250_250 is the depth image after image segmentation(matlab pre-process)
+res_all is pre_250_250 restore to 512*424 depth picture, which is the final result of this procedure
+
+before run tmp.py you need revise the path of yours 
+need python 3.x &follw pkgs: 
+numpy
+Pillow
