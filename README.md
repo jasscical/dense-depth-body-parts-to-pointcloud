@@ -2,12 +2,15 @@
 整个项目down下来，顺序 matlab 、 python 、matlab
 
 1.环境：win10 + matlab r2016a
+
 运行 split_img.m 得到图像分割（预处理1）的结果，在./100_data/pre_250_250/下，是一些250 * 250 的png图片
 
 2.环境 win10 + python3.x
+
 运行 tmp.py 得到图像还原（预处理2）的结果，在./dense-depth-body-parts-to-pointcloud/body-class/res_all/下,是一些512 * 424的图片
 
 3.环境：win10 + matlab r2016a
+
 先将 2 中 res_all中的结果512 * 424图片，举个例子，比如放到hard-pose/test/10/images/groundtruth/Cam1下替换原来的groundtruth图片
 ![alt text](https://github.com/jasscical/dense-depth-body-parts-to-pointcloud/blob/master/explain_img/1.png
 )
